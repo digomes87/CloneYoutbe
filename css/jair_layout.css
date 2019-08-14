@@ -5,7 +5,7 @@ body {
     background-color: cadetblue;
 }
 
-#content {
+.content {
     display: grid;
     max-width: 800px;
     margin: 0 auto;
@@ -18,6 +18,9 @@ body {
 .main-layout {
     background: blueviolet;
     /* padding: 40px; */
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
 }
 
 .main-layout:nth-child(even) {
@@ -51,10 +54,47 @@ body {
 .main-layout.contact {
     grid-row: 4;
     grid-column: 1 / 3;
+    grid-gap: 1px;
+    /* it doesn't work */
 }
 
 .main-layout.footer {
     grid-row: 5;
     grid-column: 1 / 3;
     height: 70px;
+    grid-gap: 1px;
+    /* it doesn't work */
+}
+
+
+.sub-content {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(30px, auto));
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 10px;
+    margin: 10px;
+    /* color: black; */
+    /* text-align: left; */
+    /* background: beige; */
+}
+
+.sub-layout {
+    color: black;
+    text-align: left;
+    padding: 0 10px 0 10px;
+    background: beige;
+    border-radius: 3px;
+}
+
+.sub-layout.header {
+    grid-column: 1 / 3;
+    font-style: italic;
+    font-weight: bolder;
+    font-
+}
+
+.sub-layout.side-section {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    text-align: center; 
 }
