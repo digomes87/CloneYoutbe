@@ -1,0 +1,24 @@
+
+body {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#content {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(3, minmax(400px, auto));
+    grid-gap: 10px;
+    /* grid-template-columns: 33% 33% 33%; */
+}
+
+.main-layout {
+    background: blueviolet;    
+    /* padding: 40px; */
+}
+.main-layout:nth-child(even) {
+    background: seagreen;
+}
