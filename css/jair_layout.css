@@ -1,0 +1,128 @@
+body {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+/* Navbar */
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    margin: 10px 0 20px 0;
+    grid-gap: 10px;
+}
+
+.navbar div {
+    background: crimson;
+}
+
+.navbar.logout {
+    width: 100px;
+    color: aqua;
+
+    text-shadow: black;
+    justify-self: right;
+}
+
+/* Main Layout */
+
+.content {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: 22% 78%;
+    grid-template-rows: repeat(5, minmax(30px, auto));
+    grid-gap: 10px;
+    /* grid-template-columns: 33% 33% 33%; */
+}
+
+.main-layout {
+    background: blueviolet;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    /* padding: 40px; */
+}
+
+.main-layout:nth-child(even) {
+    background: seagreen;
+}
+
+.main-layout.main-header {
+    grid-column: 1 / 3;
+    background: darkred;
+    height: 80px;
+    /* /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+}
+
+.main-layout.sidebar {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.main-layout.navigation {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.main-layout.main {
+    grid-row: 2 / 4;
+    grid-column: 2;
+    /* height: 200px; */
+}
+
+.main-layout.contact {
+    grid-row: 4;
+    grid-column: 1 / 3;
+    grid-gap: 1px;
+    /* it doesn't work */
+}
+
+.main-layout.footer {
+    grid-row: 5;
+    grid-column: 1 / 3;
+    height: 70px;
+    grid-gap: 1px;
+    /* grid-column: span 2; */
+    /* it doesn't work */
+}
+
+/* Sub Layout  */
+
+.sub-content {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(30px, auto));
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 10px;
+    margin: 10px;
+    /* color: black; */
+    /* text-align: left; */
+    /* background: beige; */
+    /* align-items: end; */
+    height: 95%;
+
+}
+
+.sub-layout {
+    color: black;
+    text-align: left;
+    padding: 0 10px 0 10px;
+    background: beige;
+    border-radius: 3px;
+}
+
+.sub-layout.header {
+    grid-column: 1 / 3;
+    font-style: italic;
+    font-weight: bolder;
+    /* grid-column: span 2; */
+}
+
+.sub-layout.side-section {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    text-align: center;
+}
