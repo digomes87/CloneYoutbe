@@ -5,6 +5,29 @@ body {
     background-color: cadetblue;
 }
 
+/* Navbar */
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    margin: 10px 0 20px 0;
+    grid-gap: 10px;
+}
+
+.navbar div {
+    background: crimson;
+}
+
+.navbar.logout {
+    width: 100px;
+    color: aqua;
+
+    text-shadow: black;
+    justify-self: right;
+}
+
+/* Main Layout */
+
 .content {
     display: grid;
     max-width: 800px;
@@ -14,8 +37,6 @@ body {
     grid-gap: 10px;
     /* grid-template-columns: 33% 33% 33%; */
 }
-
-/* Main Layout */
 
 .main-layout {
     background: blueviolet;
